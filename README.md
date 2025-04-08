@@ -99,3 +99,14 @@ gcloud compute firewall-rules delete YOUR_FIREWALL_RULE_SSH --quiet
 That is what originally had for accessing via bash. I made on Visual studio
 running with gcloud and it was facing issues to execute. I had to use powershell to install
 the deployment.
+to execute the cloud: gcloud compute ssh web-vm
+
+on powershell to run the command: gcloud compute ssh my-scripted-vm-ps --zone us-central1-a --project my-first-cloud-deployment
+
+to run in the ssh session: sudo apt update
+
+for the package list execute: sudo apt install apache2 -y
+
+testing the message on the web server: echo "Hello World from PowerShell Script!" | sudo tee /var/www/html/index.html
+
+testing the html address: http://34.46.120.125
